@@ -1,0 +1,7 @@
+<h2>Liste des contacts</h2>
+
+<ul>
+    <?php foreach ($contacts as $c) : ?>
+    <li class="contact"><?=$this->escapeHtml($c->getPrenom())?> <?=$this->escapeHtml($c->getNom())?></li>
+    <?php endforeach; ?>
+</ul>

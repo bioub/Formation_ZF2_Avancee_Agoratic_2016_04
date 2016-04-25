@@ -1,0 +1,37 @@
+<h2>Ajouter un contact</h2>
+
+<?=$this->form()->openTag($contactForm)?>
+
+<div>
+    <?=$this->formRow($contactForm->get('prenom'))?>
+</div>
+
+<div>
+    <?=$this->formLabel($contactForm->get('nom'))?>
+    <?=$this->formElement($contactForm->get('nom'))?>
+    <?=$this->formElementErrors($contactForm->get('nom'))?>
+</div>
+
+<div>
+    <?=$this->formRow($contactForm->get('email'))?>
+</div>
+
+<div>
+    <?=$this->formLabel($contactForm->get('telephone'))?>
+    <?=$this->formTel($contactForm->get('telephone'))?>
+    <?=$this->formElementErrors($contactForm->get('telephone'))?>
+</div>
+
+<div>
+    <?=$this->formRow($contactForm->get('societe'))?>
+</div>
+
+<div>
+    <?=$this->formRow($contactForm->get('groupes'))?>
+</div>
+
+<div>
+    <?=$this->formRow($contactForm->get('submit'))?>
+</div>
+
+<?=$this->form()->closeTag()?>
